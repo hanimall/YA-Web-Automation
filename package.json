@@ -1,0 +1,39 @@
+{
+  "name": "ya-web-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest && open-cli test-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "canvas": "^3.1.0",
+    "chromedriver": "^135.0.4",
+    "dotenv": "^16.5.0",
+    "resemblejs": "^5.0.0",
+    "selenium-webdriver": "^4.31.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^4.1.0",
+    "open-cli": "^8.0.0"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporter",
+        {
+          "pageTitle": "SauceDemo Automation Test Report",
+          "outputPath": "./test-report.html",
+          "includeFailureMsg": true,
+          "includeSuiteFailure": true
+        }
+      ]
+    ]
+  }
+}
