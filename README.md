@@ -70,7 +70,7 @@ This will:
 |-----------------------------------------|----------------|-|
 | Login with valid credentials            | `standard_user`   | Redirected to products page `/inventory.html` |
 | Login with locked out user              | `locked_out_user` | Error message appears |
-| Verify cart position for "problem" user | `visual_user`     | Cart position should be greater than default values |
+| Verify cart position for visual_user    | `visual_user`     | Cart position should be greater than default values |
 | Detect image mismatch between header and reference | `visual_user` | Detect and log differences between screenshots |
 
 
